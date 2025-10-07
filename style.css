@@ -1,1 +1,138 @@
+/* style.css */
 
+/* Reset básico y fuente */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Fondo gris muy claro */
+    color: #333;
+}
+
+header {
+    background-color: #007bff; /* Azul vibrante */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+}
+
+/* Contenido Principal */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* Estilos de Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table thead th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+/* Botones */
+.btn-download {
+    background-color: #28a745; /* Verde para descargar */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-download:hover {
+    background-color: #218838;
+}
+
+.btn-donate, .btn-suggest {
+    background-color: #ffc107; /* Amarillo/Dorado para donaciones */
+    color: #333;
+    padding: 12px 25px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-donate:hover, .btn-suggest:hover {
+    background-color: #e0a800;
+}
+
+.crypto-address {
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    color: #777;
+}
+
+.small-text {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 5px;
+}
