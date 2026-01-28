@@ -1,99 +1,46 @@
-<h1> Precios Historicos de Criptomonedas BTC, ETH, SOL csv </h1>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datos Históricos de Criptomonedas GRATIS: BTC, ETH, SOL | CSV</title>
-    <meta name="description" content="Descarga gratuita de datos históricos de precios de las principales criptomonedas (BTC, ETH, SOL) en formatos CSV con diferentes intervalos.">
-    <meta name="google-site-verification" content="6hb8hejkrWO2pwfecQ57gTL12TCQA1PVXETZmXMjcdI" />
-    <link rel="stylesheet" href="style.css">
+    <title>Mordisco Sostenible | Impacto Ambiental</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 </head>
 <body>
     <header>
-        <h1>Crypto Data Hub</h1>
-        <p>Tu fuente gratuita de datos históricos de trading para Backtesting.</p>
+        <h1>🌱 Mordisco Sostenible</h1>
+        <p>Calculadora de Emisiones de CO2 Evitadas</p>
     </header>
 
-    <nav>
-        <a href="#datos">Datos Disponibles</a>
-        <a href="#donaciones">Apóyanos (Donar)</a>
-        <a href="#sugerencias">Sugerencias</a>
-    </nav>
-
     <main>
-        <section id="datos">
-            <h2>📊 Datos Históricos Disponibles</h2>
-            <p>Haz clic para descargar el archivo CSV. Los datos son actualizados a solicitud de los usuarios</p>
+        <section id="registro">
+            <h2>Registrar Venta de Proteína</h2>
+            <form id="impactoForm">
+                <label for="nit">NIT del Restaurante/Productor:</label>
+                <input type="text" id="nit" placeholder="900xxxxxx-x" required>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Símbolo</th>
-                        <th>Intervalo</th>
-                        <th>Rango</th>
-                        <th>Descargar</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>BTC/USDT</td>
-                        <td>1 día</td>
-                        <td>5 Años</td>
-                        <td>
-                            <a href="Data/BTCUSDT_P/BTCUSDT_1_DAY__17_09_2025_TO_5YEARS_AGO.csv" download>
-                                <button class="btn-download">CSV</button>
-                            </a>
-                        </td>
-                    </tr>
+                <label for="alimento">Tipo de Proteína:</label>
+                <select id="alimento">
+                    <option value="NULL">Promedio Restaurante (General)</option>
+                    <option value="4">Tofu (Soya)</option>
+                    <option value="2">Lentejas</option>
+                    <option value="1">Frijoles</option>
+                    </select>
 
-                    <tr>
-                        <td>BTC/USDT</td>
-                        <td>1 Hora</td>
-                        <td>36 Meses</td>
-                        <td>
-                            <a href="Data/BTCUSDT_P/BTCUSDT_1_hour_36_months_1.csv" download>
-                                <button class="btn-download">CSV</button>
-                            </a>
-                        </td>
-                    </tr>
-                    
-                </tbody>
-            </table>
+                <label for="gramos">Gramos de Proteína Vendidos:</label>
+                <input type="number" id="gramos" placeholder="Ej: 2000" required>
+
+                <button type="submit">Calcular y Registrar</button>
+            </form>
         </section>
 
-        <section id="donaciones">
-            <h2>💖 Apóyanos y haz que desarrollemos Juntos ! </h2>
-            <p>Si encuentras valor en estos datos, considera una pequeña donación. ¡Cada céntimo ayuda a seguir con la actualización de los datos!</p>
-
-            <div class="donation-buttons">
-                <a href='https://ko-fi.com/concienciacuerpocultura' target='_blank' class="btn-donate">
-                    <img height='35' style='border:0px;height:35px;' src='https://storage.ko-fi.com/cdn/kofi4.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' />
-                    Apóyame en Ko-fi
-                </a>
-
-                <p>O directamente con Crypto:</p>
-                <div class="crypto-address">
-                    <p><strong>BNB (BNB Network):</strong> <code>0xAcF668252f7FDeE08684317fc4D3674A13966eB5</code></p>
-                    <p><strong>ARB (ARB Network):</strong> <code>0xAcF668252f7FDeE08684317fc4D3674A13966eB5</code></p>
-                    </div>
+        <section id="resultado" style="display:none;">
+            <div style="background: #e2f3e5; padding: 20px; border-radius: 8px; border: 1px solid #2e7d32;">
+                <h3>✅ ¡Impacto Registrado!</h3>
+                <p>Has evitado la liberación de: <strong id="co2Valor">0</strong> kg de CO2e</p>
+                <p><small>ID de Seguimiento (UUID): <span id="uuidValor"></span></small></p>
             </div>
         </section>
-
-        <section id="sugerencias">
-            <h2>💡 Sugerencias y Contacto</h2>
-            <p>¿Necesitas un par de trading diferente, un intervalo de tiempo específico o un indicador técnico añadido al CSV?</p>
-            
-            <a href="https://forms.gle/QYg8CYMqbQ56yJqn8" target="_blank" class="btn-suggest">
-                Enviar Solicitud/Sugerencia
-            </a>
-            <p class="small-text">Dinos qué necesitas y consideraremos añadirlo en la próxima actualización.</p>
-        </section>
     </main>
-
-    <footer>
-        <p>&copy; 2025 Crypto Data Hub. Todos los derechos reservados.</p>
-    </footer>
 </body>
 </html>
